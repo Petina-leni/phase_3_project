@@ -27,7 +27,8 @@ x_train_resampled, y_train_resampled = smote.fit_resample(x_train, y_train)
 
 # Print class distribution before and after
 print("Before SMOTE:", Counter(y_train))  # Original class distribution
-print("After SMOTE:", Counter(y_train_resampled))  # Resampled distribution
+print("After SMOTE:", Counter(y_train_resampled))  # Resampled distribution 
+```
 
 
 ## Classification Report 
