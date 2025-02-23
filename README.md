@@ -1,4 +1,4 @@
-![Churn]Churn.png
+![Churn](Charts/Churn.png)
 # Context
 - Telecommunications firms keep a close eye on customer churn, which frequently stems from things like exorbitant prices, poor customer service, changing usage patterns, ineffective voicemail, or problems with area codes. Pricing is still important since consumers are drawn to more affordable plans with superior features though this will mean high retention costs and revenue loss.
 - Are they able to predict if a customer will churn or not.
@@ -31,7 +31,7 @@ print("After SMOTE:", Counter(y_train_resampled))
 
 ## Classification Report 
 
-![Classification_report]Classification Report.png
+![Classification Report](Charts/Classification Report.png)
 ### Best Model?
 If you prioritize overall performance (Accuracy, F1, ROC-AUC): Random Forest
 
@@ -42,7 +42,7 @@ If speed is a major factor: Decision Tree is a good trade-off.
 If recall is crucial (capturing more churners): Logistic Regression, but it has lower precision.
 
 # Confusion Matrix
-![Confusion_matrix]Confusion matrix.png
+![Confusion_matrix](Charts/Confusion matrix.png)
 ### Which Model is Best?
 If capturing the most churners is the priority: Logistic Regression (Highest TP, lowest FN).
 
@@ -55,7 +55,7 @@ If accuracy in non-churners is more important: Random Forest (highest TN, lowest
 Random Forest or Gradient Boosting for a balanced approach.
 
 ## Histogram of probabilities for Model Confidence 
-![Hist]Histogram of probabilities.png
+![Hist]("Charts/Histogram of probabilities.png")
 If the probabilities are skewed toward 0, the model is more confident that most customers will not churn.
 If the probabilities are skewed toward 1, the model is more confident that most customers will churn.
 If the probabilities are spread out, the model is more uncertain about predictions.
@@ -69,11 +69,11 @@ If one model has probabilities mostly close to 0 and 1, it means it makes strong
 If another model has probabilities concentrated around 0.5, it means it is less confident and struggles to differentiate churners from non-churners.
 
 ## Precision-Recall Curve 
-![Precision-Recall]Precision-recall curve.png
+![Precision-Recall](Charts/Precision-recall curve.png)
 - The overall balanced model is Random forest , Though Gradient Boosting seems to be the best with a recall of 0.62 and a precision of 0.59 though logistics regression seems to have High recall ensures you capture most of the actual churners. While the are under the curve is much larger for Gradient Boost and Random forest eith the beast threshold of 0.89 amd 0.74
 
 # Feature Importance
-![Feature_Importance]Feature Importance.png
+![Feature_Importance](Charts/Feature Importance.png)
 - The top 3 Feature importance show very high correlation with churn
 - Reccomendations
 Billing issues drive churn → Provide flexible plans & loyalty discounts.
