@@ -1,3 +1,4 @@
+# Simplifying Customer Insights to Prevent Churn
 ![Churn](Charts/Churn.png)
 # Context
 - Telecommunications firms keep a close eye on customer churn, which frequently stems from things like exorbitant prices, poor customer service, changing usage patterns, ineffective voicemail, or problems with area codes. Pricing is still important since consumers are drawn to more affordable plans with superior features though this will mean high retention costs and revenue loss.
@@ -14,8 +15,8 @@
 
 # Using SMOTE to handle class imbalance
 
-"""python
-from imblearn.over_sampling import SMOTE
+```python
+from imblearn.over_sampling import SMOTE 
 from collections import Counter
 
 # Initialize SMOTE
@@ -26,8 +27,8 @@ x_train_resampled, y_train_resampled = smote.fit_resample(x_train, y_train)
 
 # Print class distribution before and after
 print("Before SMOTE:", Counter(y_train))  # Original class distribution
-print("After SMOTE:", Counter(y_train_resampled)) 
-""" 
+print("After SMOTE:", Counter(y_train_resampled))  # Resampled distribution
+
 
 ## Classification Report 
 
