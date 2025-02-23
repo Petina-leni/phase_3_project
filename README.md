@@ -69,7 +69,7 @@ If one model has probabilities mostly close to 0 and 1, it means it makes strong
 If another model has probabilities concentrated around 0.5, it means it is less confident and struggles to differentiate churners from non-churners.
 
 ## Precision-Recall Curve 
-![Precision-Recall](Charts/Precision-recall_curve.png)
+![Precision-Recall](Charts/Precision_recall_curve.png)
 - The overall balanced model is Random forest , Though Gradient Boosting seems to be the best with a recall of 0.62 and a precision of 0.59 though logistics regression seems to have High recall ensures you capture most of the actual churners. While the are under the curve is much larger for Gradient Boost and Random forest eith the beast threshold of 0.89 amd 0.74
 
 # Feature Importance
